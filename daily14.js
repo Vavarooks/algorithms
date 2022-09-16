@@ -33,9 +33,13 @@ function frequency(arr){
             newArr.push(parseInt(key));
         }
     }
-    
+    originalArrCount = arr.length;
+    if(newArr.length == originalArrCount && newArr.length != 1){
+        return [];
+    }
     return newArr;
 }
+
 const nums1 = [];
 const expected1 = [];
 
