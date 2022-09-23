@@ -17,5 +17,3 @@ console.log(anagram("abc"));
 // input taken in is string
         // squence may be used for the anagram
     // output produced makes the anogram
-
-console.log(anagram("Google", "Oggle"))
