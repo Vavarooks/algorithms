@@ -1,19 +1,19 @@
 // Had to use online refrences!
 
-function anagram(str){
-    const output = [];
-    function split_str(str, change = ''){
-        
-      if (!str) output.push(change)
-      for (let i = 0; i < str.length; i++){
-        split_str(str.slice(0,i) + str.slice(i+1), change + str[i]);
-      }
+function listOfAnagrams(str, solutions = [], partial = "") {
+    if (!str) {
+      solutions.push(partial);
     }
-    split_str(str)
-    return output
+  
+    for (var i = 0; i < str.length; i++) {
+      var leftSlice = str.slice(0, i);
+      var rightSlice = str.slice(i + 1); // skips current letter
+      listOfAnagrams(leftSlice + rightSlice, solutions, partial + str[i]);
+    }
+    return solutions;
   }
 
-console.log(anagram("abc"));
+console.log(listOfAnagrams("dogi",[],""))
 // input taken in is string
         // squence may be used for the anagram
     // output produced makes the anogram
