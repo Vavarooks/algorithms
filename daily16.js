@@ -1,3 +1,6 @@
+// Had to use online refrences!
+// Worked Together With Others!
+
 function fib(num){
     if(num === 1){
         return 0

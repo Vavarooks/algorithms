@@ -10,6 +10,9 @@
 // input:[1, 2, 4, 5, 6, 8, 9, 12, 13, 14] , 10
 // there is no 10 in the input, so the expected output will be -1
 
+// Had to use online refrences!
+// Worked Together With Others!
+
 function searchIndex(arr, num){
     let first =0;
     let last = arr.length-1

@@ -5,6 +5,9 @@
 
 // Dedupe of [ 3, 4, 1, 4, 4, 5, 3, 4 ] will be [ 1, 3, 4, 5 ]
 
+// Had to use online refrences!
+// Worked Together With Others!
+
 function dup(arr) {
     var nwarr= [arr[0]];
     for (var i = 0 ; i < arr.length-1 ; i ++) {

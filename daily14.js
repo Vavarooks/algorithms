@@ -10,6 +10,9 @@
 //       - return empty array
 // */
 
+// Had to use online refrences!
+// Worked Together With Others!
+
 function frequency(arr){
     myHash = {};
     newArr = [];
